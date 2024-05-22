@@ -21,10 +21,6 @@ Ergonomic Designs relies on the following dependencies:
 
 There is no installation required for Ergonomic Designs. Simply visit our website to access our services.
 
-## Contributors
-
-- Anastasia Molly (@anastasiamolly)
-- Jane Smith (@janesmith)
 
 ## License
 
