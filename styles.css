@@ -119,9 +119,10 @@ nav {
   gap: 2rem;
   text-decoration: none;
   padding: 8px;
+  color: #000000;
 }
 
-.nav-link.active {
+.link.active a {
   color: white;
   background-color: blue;
   font-weight: bold;

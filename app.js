@@ -17,13 +17,21 @@ navLinks.addEventListener("click", () => {
 
 // Highlight the active link in the navigation based on current page URL
 document.addEventListener("DOMContentLoaded", () => {
-  const navItems = document.querySelectorAll(".nav-link"); // Select all nav links
-  const currentPath = window.location.pathname; // Get current URL path
+  const navItems = document.querySelectorAll(".link"); // Select all nav links
+  const currentPath = window.location.hash; // Get current URL path
+
+  console.log("Current Path:", currentPath); // Log current path for debugging
+
+  // Remove 'active' class from all links
+  navItems.forEach(link => {
+    link.classList.remove("active");
+  });
 
   // Add 'active' class to the matching link
   navItems.forEach(link => {
-    if (link.getAttribute("href") === currentPath) {
+    if (link.querySelector("a").getAttribute("href") === currentPath) {
       link.classList.add("active");
+      console.log("Active link set:", link); // Log active link for debugging
     }
   });
 });
