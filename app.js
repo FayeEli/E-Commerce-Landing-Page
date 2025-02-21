@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log("Current Path:", currentPath); // Log current path for debugging
 
+  
+
   // Remove 'active' class from all links
   navItems.forEach(link => {
     link.classList.remove("active");
